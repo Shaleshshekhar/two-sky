@@ -196,8 +196,8 @@
             if (urlParams.get('view') === 'story') {
                 isStoryMode = true;
                 console.log("Story Mode Active: Disabling AR");
-                const scene = document.querySelector('a-scene');
-                if (scene) scene.remove();
+                const  = document.querySelector('a-');
+                if () .remove();
 
                 const btn = document.getElementById('btn-enter');
                 btn.innerText = "WATCH STORY";
@@ -489,11 +489,11 @@
         </button>
     </div>
 
-    <!-- AR SCENE -->
+    <!-- AR  -->
     <a-scene
         mindar-image="imageTargetSrc: ./assets/targets.mind; filterMinCF:0.0001; filterBeta: 0.01; uiScanning: no; uiLoading: no;"
         color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights; logarithmicDepthBuffer: true;"
-        vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+        vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false" embedded>
 
         <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
